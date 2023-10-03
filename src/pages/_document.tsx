@@ -3,7 +3,15 @@ import type { ReactElement } from 'react';
 
 const Document = (): ReactElement => (
   <Html lang="en">
-    <Head />
+    <Head>
+      <link
+        rel="preload"
+        href="/fonts/JetBrainsMono-Regular.woff2"
+        as="font"
+        type="font/woff2"
+      />
+      <link rel="stylesheet" href="/fonts/fonts.css" />
+    </Head>
     <body>
       <Main />
       <NextScript />
