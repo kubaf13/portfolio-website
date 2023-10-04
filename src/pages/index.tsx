@@ -18,7 +18,7 @@ const Home = (): ReactElement => (
         <h1>see you soon</h1>
         <Message>
           <Tag>{'<span> '}</Tag>
-          page on maintenace
+          page on maintenance
           <Tag>{' </span>'}</Tag>
         </Message>
       </CenteringContainer>
