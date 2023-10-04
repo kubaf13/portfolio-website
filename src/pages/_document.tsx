@@ -10,6 +10,12 @@ const Document = (): ReactElement => (
         as="font"
         type="font/woff2"
       />
+      <link
+        rel="preload"
+        href="/fonts/LongCang-Regular.woff2"
+        as="font"
+        type="font/woff2"
+      />
       <link rel="stylesheet" href="/fonts/fonts.css" />
     </Head>
     <body>
