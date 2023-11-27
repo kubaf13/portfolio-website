@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     box-sizing: border-box;;
     margin: 0;
     padding: 0;
-    font-family: ${({ theme }) => theme.fonts.defaultFont};
+    font-family: ${({ theme }) => theme.fonts.jetBrainsFont};
   }
 
   body {
@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
   }
   
   h1, h2, h3 {
-    font-family: ${({ theme }) => theme.fonts.headingFont};
+    font-family: ${({ theme }) => theme.fonts.longCangFont};
   }
   
   h1 {
