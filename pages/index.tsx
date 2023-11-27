@@ -1,11 +1,10 @@
+import type { NextPage } from 'next';
 import Head from 'next/head';
-import type { ReactElement } from 'react';
 
+import { Footer } from '@/components/molecules/Footer/Footer';
 import { CenteringContainer, Message, Tag } from '@/styles/shared';
 
-import { Footer } from '../components/molecules/Footer/Footer';
-
-const Home = (): ReactElement => (
+const Home: NextPage = () => (
   <>
     <Head>
       <title>iFlisek</title>

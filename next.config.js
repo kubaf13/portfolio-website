@@ -1,15 +1,9 @@
 // eslint-disable-next-line
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   swcMinify: true,
-
-  compiler: {
-    styledComponents: {
-      displayName: process.env.APP_ENVIRONMENT === 'development',
-    },
-  },
-  webpack: (config) => {
+  webpack: config => {
     config.module.rules.push({
       test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
       use: [

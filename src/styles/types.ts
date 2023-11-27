@@ -12,7 +12,7 @@ export interface Theme {
     [key in ViewportName]: string;
   };
   fonts: {
-    headingFont: string;
-    defaultFont: string;
+    longCangFont: string;
+    jetBrainsFont: string;
   };
 }
