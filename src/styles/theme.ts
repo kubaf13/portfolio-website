@@ -15,8 +15,8 @@ const theme: Theme = {
     maxWidth: `screen and (min-width: ${breakpoints.maxWidth}px)`,
   },
   fonts: {
-    headingFont: 'Long Cang',
-    defaultFont: 'Jetbrains Regular',
+    longCangFont: 'Long Cang',
+    jetBrainsFont: 'Jetbrains Regular',
   },
 };
 

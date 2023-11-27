@@ -4,7 +4,7 @@ export const FooterText = styled.p`
   display: block;
   margin: 10px auto;
   text-align: center;
-  font-family: ${({ theme }) => theme.fonts.defaultFont};
+  font-family: ${({ theme }) => theme.fonts.jetBrainsFont};
   font-size: 12px;
 `;
 
