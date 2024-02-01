@@ -12,7 +12,7 @@ export interface Theme {
     [key in ViewportName]: string;
   };
   fonts: {
-    longCangFont: string;
+    loveYaLikeASister: string;
     jetBrainsFont: string;
   };
 }
