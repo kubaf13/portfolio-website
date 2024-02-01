@@ -15,7 +15,7 @@ const theme: Theme = {
     maxWidth: `screen and (min-width: ${breakpoints.maxWidth}px)`,
   },
   fonts: {
-    longCangFont: 'Long Cang',
+    loveYaLikeASister: 'Love Ya Like A Sister',
     jetBrainsFont: 'Jetbrains Regular',
   },
 };

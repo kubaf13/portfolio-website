@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Heading = styled.h1`
   div > span {
-    font-family: ${({ theme }) => theme.fonts.longCangFont};
+    font-family: ${({ theme }) => theme.fonts.loveYaLikeASister};
   }
 
   .Typewriter__cursor {
