@@ -8,6 +8,9 @@ export const breakpoints = {
 };
 
 const theme: Theme = {
+  palette: {
+    text: '#FFF',
+  },
   media: {
     mobile: `screen and (max-width: ${breakpoints.tablet - 1}px)`,
     tablet: `screen and (min-width: ${breakpoints.tablet}px)`,
@@ -16,7 +19,7 @@ const theme: Theme = {
   },
   fonts: {
     loveYaLikeASister: 'Love Ya Like A Sister',
-    jetBrainsFont: 'Jetbrains Regular',
+    jetBrainsFont: 'JetBrains',
   },
 };
 
