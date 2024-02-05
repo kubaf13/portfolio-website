@@ -27,7 +27,7 @@ const config: StorybookConfig = {
     '@storybook/addon-themes',
     '@storybook/themes'
   ],
-  staticDirs: ['../public/fonts'],
+  staticDirs: ['../public'],
   framework: {
     name: '@storybook/nextjs',
     options: {},
