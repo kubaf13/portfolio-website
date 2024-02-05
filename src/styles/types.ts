@@ -7,12 +7,17 @@ declare module 'styled-components' {
 
 export type ViewportName = 'desktop' | 'tablet' | 'mobile' | 'maxWidth';
 
+export type Palette = {
+  text: string;
+};
+
 export interface Theme {
+  palette: Palette;
   media: {
     [key in ViewportName]: string;
   };
   fonts: {
-    longCangFont: string;
+    loveYaLikeASister: string;
     jetBrainsFont: string;
   };
 }

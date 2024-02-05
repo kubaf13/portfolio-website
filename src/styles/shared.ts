@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Tag = styled.span`
   color: rgba(255, 255, 255, 0.5);
-  font-family: 'JetBrains Light';
+  font-family: ${({ theme }) => theme.fonts.jetBrainsFont};
+  font-weight: 300;
 `;
 
 export const CenteringContainer = styled.div`
