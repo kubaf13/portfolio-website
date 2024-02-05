@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear();
 export const Footer = (): ReactElement => (
   <Container>
     <FooterText>
-      <Tag>{'<span>'}</Tag>iFlisek {currentYear}
+      <Tag>{'<span>'}</Tag>iFlisek 🤓{currentYear}
       <Tag>{'</span>'}</Tag>
     </FooterText>
   </Container>
