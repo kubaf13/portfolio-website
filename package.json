@@ -27,10 +27,12 @@
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^7.2.3",
+    "@storybook/addon-centered": "^5.3.21",
     "@storybook/addon-essentials": "^7.2.1",
     "@storybook/addon-interactions": "^7.2.1",
     "@storybook/addon-links": "^7.2.1",
     "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/addon-themes": "^7.6.12",
     "@storybook/blocks": "^7.2.1",
     "@storybook/nextjs": "^7.2.1",
     "@storybook/react": "^7.2.1",
@@ -56,7 +58,8 @@
     "storybook": "^7.6.12",
     "tsconfig-paths-webpack-plugin": "^4.0.0",
     "typescript": "5.2.2",
-    "typewriter-effect": "^2.21.0"
+    "typewriter-effect": "^2.21.0",
+    "webpack": "^5.74.0"
   },
   "peerDependencies": {
     "webpack": "^5.74.0"
