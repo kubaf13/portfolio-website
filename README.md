@@ -23,7 +23,7 @@ What you see it will be my portfolio website. In this page you will see informat
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
 
 ```typescript
-type TechStack = {
+interface ProjectProps {
   tech: string;
   framework: string;
   projectUI: string;
@@ -31,7 +31,7 @@ type TechStack = {
   deploy: string;
 };
 
-const appStack: TechStack = {
+const appStack: ProjectProps = {
   tech: "Typescript",
   framework: "Next.js v14.1",
   projectUI: "Figma",
