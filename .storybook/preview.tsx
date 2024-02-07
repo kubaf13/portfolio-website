@@ -30,16 +30,9 @@ export const preview: Preview = {
       },
     },
     options: {
-      // @ts-ignore
-      storySort: (a, b) => {
-        if (a[1].kind === 'Components/Welcome') {
-          return -1;
-        }
-
-        return a[1].kind === b[1].kind
-          ? 0
-          : a[1].id.localeCompare(b[1].id, { numeric: true });
-      },
+      storySort: {
+        order: ['*', ['Introduction', '*']],
+      }
     },
     decorators,
   },
