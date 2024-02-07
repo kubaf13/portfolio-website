@@ -14,7 +14,7 @@ What you see it will be my portfolio website. In this page you will see informat
 ## Here is a link to the [page](https://iflisek.com) 
 [![Logo - iFlisek - web & mobile tech](./public/images/Logo.svg)](https://iflisek.com)
 
-> [FIGMA PROJECT - work in progress](https://www.figma.com/file/zfS81auOUq3jaUqfpPYio8/Portfolio-project?type=design&node-id=736%3A4301&mode=design&t=dZN9GSGgwttwckoK-1)
+> [FIGMA PROJECT - work in progress](https://www.figma.com/file/zfS81auOUq3jaUqfpPYio8/Portfolio-project?type=design&node-id=686%3A20&mode=design&t=dZN9GSGgwttwckoK-1)
 
 #### Of course, the entire website will be developed and will have subsequent phases 
 > ( __which ones?__ I don't know yet because it's still being created in my head )
