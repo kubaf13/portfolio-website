@@ -11,7 +11,7 @@ export const MaintenanceTemplate: MaintenanceTemplateType = () => (
         onInit={typewriter => {
           typewriter
             .typeString('see you soon')
-            .pauseFor(3500)
+            .pauseFor(4000)
             .deleteAll()
             .start();
         }}
@@ -22,9 +22,7 @@ export const MaintenanceTemplate: MaintenanceTemplateType = () => (
       />
     </Heading>
     <Message>
-      <Tag>{'<span> '}</Tag>
-      page on maintenance
-      <Tag>{' </span>'}</Tag>
+      <Tag>{'<span>'}</Tag>page on maintenance<Tag>{'</span>'}</Tag>
     </Message>
   </CenteringContainer>
 );
