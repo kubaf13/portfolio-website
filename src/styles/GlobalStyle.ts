@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     color: white;
   }
   
-  h1, h2, h3 {
+  h1, h2 {
     font-family: ${({ theme }) => theme.fonts.loveYaLikeASister};
   }
   

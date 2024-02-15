@@ -1,5 +1,4 @@
 import JobPosition from '@molecules/JobPosition';
-import { Fragment } from 'react';
 
 import {
   CompanyName,
@@ -20,15 +19,13 @@ export const ExperienceSection: ExperienceSectionType = ({
     <ExperienceList>
       {companies.map(company => (
         <ExperienceElement key={company.companyName}>
-          <CompanyName>{company.companyName}</CompanyName>
+          <CompanyName>[{company.companyName}]</CompanyName>
           <JobsList>
             {company.jobs.map(jobPosition => (
-              <Fragment key={jobPosition.timeline}>
-                <Job>
-                  <Line />
-                  <JobPosition {...jobPosition} />
-                </Job>
-              </Fragment>
+              <Job key={jobPosition.timeline}>
+                <Line />
+                <JobPosition {...jobPosition} />
+              </Job>
             ))}
           </JobsList>
         </ExperienceElement>

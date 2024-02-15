@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const ExperienceList = styled.ul`
   position: relative;
   overflow: hidden;
+  //border: 1px solid white;
 `;
 
 export const ExperienceElement = styled.li`
@@ -12,18 +13,27 @@ export const ExperienceElement = styled.li`
 `;
 
 export const CompanyName = styled.h3`
-  font-family: ${({ theme }) => theme.fonts.jetBrainsFont};
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 20px;
+
+  @media ${({ theme }) => theme.media.tablet} {
+    margin-top: 50px;
+  }
 `;
 
 export const JobsList = styled.ul`
-  margin-left: 125px;
+  margin-left: 40px;
   position: relative;
-  height: 100%;
+
+  @media ${({ theme }) => theme.media.tablet} {
+    margin-left: 125px;
+  }
 `;
 
 export const Job = styled.li`
   position: relative;
-  margin-block: 70px;
+  margin-block: 50px;
 
   &:before {
     content: '';
@@ -31,19 +41,19 @@ export const Job = styled.li`
     height: 20px;
     border-radius: 50%;
     position: absolute;
-    top: 5px;
-    left: -80px;
+    top: 3px;
+    left: -35px;
     background: white;
   }
 
   &:after {
     content: '';
     border: none;
-    height: 130%;
+    height: 145%;
     width: 1px;
     position: absolute;
     top: 5px;
-    left: -70px;
+    left: -25px;
     background: repeating-linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.36),
@@ -52,11 +62,33 @@ export const Job = styled.li`
       transparent 12px
     );
   }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    margin-block: 100px;
+
+    &:before {
+      content: '';
+      top: 5px;
+      left: -80px;
+    }
+
+    &:after {
+      content: '';
+      top: 5px;
+      left: -70px;
+    }
+  }
 `;
 
 export const Line = styled(DashedLine)`
   position: absolute;
-  top: 15px;
-  left: -80px;
-  width: 80px;
+  top: 13px;
+  left: -20px;
+  width: 20px;
+
+  @media ${({ theme }) => theme.media.tablet} {
+    top: 15px;
+    left: -80px;
+    width: 80px;
+  }
 `;
