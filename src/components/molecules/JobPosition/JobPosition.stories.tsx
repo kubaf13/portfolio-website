@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { jobPositions } from '@/database/experience/jobPositions';
+import { jobPosition } from '@/database/experience/jobPositions';
 
 import { JobPosition } from './JobPosition';
 
@@ -15,5 +15,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Job: Story = {
-  args: jobPositions,
+  args: jobPosition,
 };

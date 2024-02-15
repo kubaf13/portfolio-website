@@ -1,6 +1,6 @@
 import type { JobPositionProps } from '@molecules/JobPosition/JobPosition.types';
 
-export const jobPositions: JobPositionProps = {
+export const jobPosition: JobPositionProps = {
   jobTitle: 'frontend developer',
   description:
     'Lorem ipsum dolor sit amet consectetur. In id in tortor malesuada est nisl elementum nulla. Faucibus vulputate tincidunt in sit et consectetur commodo purus.',

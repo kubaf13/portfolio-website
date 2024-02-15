@@ -4,7 +4,7 @@ import {
   JobDescription,
   JobSummary,
   JobTitle,
-  TechWrapper,
+  TechList,
   Timeline,
   Wrapper,
 } from './JobPosition.styled';
@@ -20,14 +20,18 @@ export const JobPosition: JobPositionType = ({
   <JobSummary>
     <Wrapper>
       <JobTitle>[{jobTitle}]</JobTitle>
-      <Timeline>[{timeline}]</Timeline>
+      <Timeline>{timeline}</Timeline>
     </Wrapper>
     <JobDescription>{description}</JobDescription>
-    <TechWrapper>
+    <TechList>
       {mainTechStack.map(tech => (
-        <TechLabel key={tech.label} label={tech.label} isYellow={false} />
+        <li key={tech.label}>
+          <TechLabel label={tech.label} isYellow={false} />
+        </li>
       ))}
-      <TechLabel label={`+${otherTechStack.length}`} isYellow />
-    </TechWrapper>
+      <li>
+        <TechLabel label={`+${otherTechStack.length}`} isYellow />
+      </li>
+    </TechList>
   </JobSummary>
 );

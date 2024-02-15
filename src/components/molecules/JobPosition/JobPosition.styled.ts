@@ -9,12 +9,16 @@ export const JobSummary = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 10px;
 
   @media ${({ theme }) => theme.media.tablet} {
-    flex-direction: row;
+    grid-template-columns: repeat(2, auto) 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    justify-items: center;
     align-items: center;
   }
 `;
@@ -39,10 +43,14 @@ export const JobDescription = styled.p`
   }
 `;
 
-export const TechWrapper = styled.div`
+export const TechList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+
+  li {
+    list-style: none;
+  }
 
   @media ${({ theme }) => theme.media.tablet} {
     gap: 29px;

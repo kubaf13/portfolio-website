@@ -41,12 +41,8 @@ const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
       }
   }
 
-  h3 {
-      font-size: 24px;
-
-      @media ${({ theme }) => theme.media.tablet}{
-          font-size: 40px;
-      }
+  ul, ol {
+      list-style: none;
   }
 `;
 
