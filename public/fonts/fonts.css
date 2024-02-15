@@ -17,6 +17,24 @@
 }
 
 @font-face {
+    font-family: 'JetBrains';
+    src: url("JetBrainsMono-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains';
+    src: url("JetBrainsMono-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Love Ya Like A Sister';
     src: url("LoveYaLikeASister-Regular.woff2") format("woff2");
     font-weight: 400;
