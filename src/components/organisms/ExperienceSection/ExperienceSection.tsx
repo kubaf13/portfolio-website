@@ -1,3 +1,4 @@
+import SectionTitle from '@atoms/SectionTitle';
 import JobPosition from '@molecules/JobPosition';
 
 import {
@@ -15,7 +16,7 @@ export const ExperienceSection: ExperienceSectionType = ({
   sectionTitle,
 }) => (
   <section>
-    <h2>{sectionTitle}</h2>
+    <SectionTitle title={sectionTitle} />
     <ExperienceList>
       {companies.map(company => (
         <ExperienceElement key={company.companyName}>

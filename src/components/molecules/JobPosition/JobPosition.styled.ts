@@ -40,20 +40,21 @@ export const JobDescription = styled.p`
 
   @media ${({ theme }) => theme.media.tablet} {
     font-size: 20px;
+    margin-bottom: 20px;
   }
 `;
 
 export const TechList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
 
   li {
     list-style: none;
+    margin: 0 10px 20px 0;
   }
 
   @media ${({ theme }) => theme.media.tablet} {
-    gap: 29px;
+    gap: 10px;
   }
 `;
 

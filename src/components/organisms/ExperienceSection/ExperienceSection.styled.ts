@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const ExperienceList = styled.ul`
   position: relative;
   overflow: hidden;
-  //border: 1px solid white;
 `;
 
 export const ExperienceElement = styled.li`
@@ -18,7 +17,7 @@ export const CompanyName = styled.h3`
   font-size: 20px;
 
   @media ${({ theme }) => theme.media.tablet} {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 `;
 
@@ -64,8 +63,6 @@ export const Job = styled.li`
   }
 
   @media ${({ theme }) => theme.media.tablet} {
-    margin-block: 100px;
-
     &:before {
       content: '';
       top: 5px;
