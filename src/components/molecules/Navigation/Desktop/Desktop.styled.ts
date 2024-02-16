@@ -15,6 +15,14 @@ export const NavigationList = styled.ul`
       right: -5px;
       content: '/';
       color: rgba(255, 255, 255, 0.27);
+      transition: 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        transition-delay: 0.35s;
+        color: #f0d546;
+      }
     }
   }
 `;

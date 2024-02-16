@@ -1,10 +1,10 @@
 import Link from '@atoms/Link';
 
 import type { Navigation as NavigationType } from '../Navigation.types';
-import { NavigationList } from './Desktop.styled';
+import { NavigationList, NavigationWrapper } from './Mobile.styled';
 
-export const Desktop: NavigationType = ({ links }) => (
-  <nav>
+export const Mobile: NavigationType = ({ links }) => (
+  <NavigationWrapper>
     <NavigationList>
       {links.map(link => (
         <li key={link.url}>
@@ -12,5 +12,5 @@ export const Desktop: NavigationType = ({ links }) => (
         </li>
       ))}
     </NavigationList>
-  </nav>
+  </NavigationWrapper>
 );
