@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     color: white;
   }
   
-  h1, h2, h3 {
+  h1, h2 {
     font-family: ${({ theme }) => theme.fonts.loveYaLikeASister};
   }
   
@@ -41,12 +41,8 @@ const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
       }
   }
 
-  h3 {
-      font-size: 24px;
-
-      @media ${({ theme }) => theme.media.tablet}{
-          font-size: 40px;
-      }
+  ul, ol {
+      list-style: none;
   }
 `;
 

@@ -6,13 +6,19 @@ import theme from '../src/styles/theme';
 import React from 'react';
 import { RouterContext } from "next/dist/shared/lib/router-context.shared-runtime";
 import { GlobalStyle, ThemeProvider } from '@/styles';
+import { AppContextProvider } from '@/contexts/AppContext';
+import CenteringContainer from '@atoms/CenteringContainer';
 
 
 export const decorators = [
   (storyFn: () => React.ReactNode) => (
     <ThemeProvider theme={theme}>
-      <GlobalStyle theme={theme}/>
-      {storyFn()}
+      <AppContextProvider>
+        <GlobalStyle theme={theme}/>
+          <CenteringContainer>
+            {storyFn()}
+          </CenteringContainer>
+      </AppContextProvider>
     </ThemeProvider>
   ),
 ];
