@@ -1,4 +1,3 @@
-import Header from '@atoms/Header';
 import Footer from '@molecules/Footer';
 import MaintenanceTemplate from '@templates/MaintenanceTemplate';
 import type { NextPage } from 'next';
@@ -12,7 +11,6 @@ const Home: NextPage = () => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <main>
-      <Header />
       <MaintenanceTemplate />
     </main>
     <Footer />
